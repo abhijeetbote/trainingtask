@@ -250,6 +250,7 @@ def callback():
     mycursor.execute("insert into userdata (user_name,user_email)values(%s,%s)", (name,email,))
     mysql.connection.commit()
 
+    #login details
     return f"""
     User information: <br>
     Name: {name} <br>
